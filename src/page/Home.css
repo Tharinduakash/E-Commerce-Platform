@@ -1,0 +1,232 @@
+/* Home Page Styles */
+.home-page {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 8%;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 80vh;
+  }
+  
+  .hero-content {
+    flex: 1;
+    padding-right: 5%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .highlight {
+    color: #4361ee;
+    font-weight: 700;
+  }
+  
+  .hero-text {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 2rem;
+    max-width: 80%;
+  }
+  
+  .hero-image {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+  
+  .hero-image:hover {
+    transform: scale(1.02);
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 6rem 8%;
+    background-color: white;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #2d3748;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  }
+  
+  .feature-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+  }
+  
+  .feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+  }
+  
+  .feature-card:hover .feature-image img {
+    transform: scale(1.1);
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2d3748;
+  }
+  
+  .feature-card p {
+    color: #718096;
+    line-height: 1.6;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 8%;
+    background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .stat-item h4 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-item p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Testimonials */
+  .testimonials-section {
+    padding: 6rem 8%;
+    background-color: #f8fafc;
+  }
+  
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  }
+  
+  .quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #4a5568;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .author {
+    font-weight: 600;
+    color: #2d3748;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    padding: 6rem 8%;
+    background: linear-gradient(135deg, #f72585 0%, #7209b7 100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* CTA Button */
+  .cta-button {
+    background-color: #4361ee;
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+  }
+  
+  .cta-button:hover {
+    background-color: #3a0ca3;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.6);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      padding: 2rem 5%;
+      text-align: center;
+    }
+    
+    .hero-content {
+      padding-right: 0;
+      margin-bottom: 3rem;
+    }
+    
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-text {
+      max-width: 100%;
+    }
+    
+    .stats-section {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
